@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.igorkorovchenko.helloandroid.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@string/udacity_presentation"
+            android:scaleType="centerCrop"
+            android:src="@drawable/udacity_android_nanodegree" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:layout_margin="15dp"
+                android:textStyle="bold"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/site_label"
+                android:layout_margin="15dp"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_label"
+                android:layout_margin="15dp"
+                android:textStyle="bold"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/address_label"
+                android:layout_margin="15dp"
+                android:textStyle="bold"
+                android:textAlignment="textEnd" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/udacity"
+                android:layout_margin="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/site"
+                android:layout_margin="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/phone"
+                android:layout_margin="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:layout_margin="15dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.widget.LinearLayout>
